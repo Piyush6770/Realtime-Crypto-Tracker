@@ -1,0 +1,49 @@
+package com.CryptoTracker.model;
+
+public class CryptoCoin {
+    private String id;
+    private String name;
+    private double price;
+    private double crypto24h;
+    public CryptoCoin() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getCrypto24h() {
+        return crypto24h;
+    }
+
+    public void setCrypto24h(double crypto24h) {
+        this.crypto24h = crypto24h;
+    }
+
+    public CryptoCoin(String id, String name, double price, double crypto24h) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.crypto24h = crypto24h;
+    }
+}

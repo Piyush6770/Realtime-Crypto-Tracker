@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker</title>
+</head>
+<body style="text-align: center; margin-top: 50px;">
+
+<h1>Cryptocurrency Price Tracker</h1>
+
+<!-- The 'action' attribute should point to your Java backend endpoint -->
+<form action="/track" method="POST">
+
+  <label for="crypto-select">Choose a Cryptocurrency:</label>
+
+  <!-- The 'name' attribute is what your Java controller will read -->
+  <select id="crypto-select" name="coins" required>
+    <option value="bitcoin">Bitcoin (BTC)</option>
+    <option value="ethereum">Ethereum (ETH)</option>
+    <option value="solana">Solana (SOL)</option>
+    <option value="ripple">Ripple (XRP)</option>
+    <option value="dogecoin">Dogecoin (DOGE)</option>
+    <option value="cardano">Cardano (ADA)</option>
+  </select>
+
+  <br><br>
+
+  <button type="submit">Track Price</button>
+</form>
+
+
+</body>
+</html>
