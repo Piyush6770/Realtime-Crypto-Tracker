@@ -25,7 +25,7 @@ public class CryptoService {
         JSONObject json = new JSONObject(response);
         for(String coin : coins){
             if(json.has(coin)){
-                JSONObject coinjson = new JSONObject(coin);
+                JSONObject coinjson = json.getJSONObject(coin);
                 double price = coinjson.getDouble("usd");
                 double change = coinjson.getDouble("usd_24h_change");
                 coinList.add(new CryptoCoin(coin,coin,price,change));
